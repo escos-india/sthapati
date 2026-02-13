@@ -1,0 +1,70 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A team of ACE professionals collaborating around a futuristic holographic city model, symbolizing innovation and planning.",
+      "imageUrl": "https://i.ibb.co/M7b236p/hero-1-new.jpg",
+      "imageHint": "Futuristic ACE Collaboration"
+    },
+    {
+      "id": "hero-2",
+      "description": "The striking facade of a modern skyscraper, representing cutting-edge architectural design and engineering.",
+      "imageUrl": "https://i.ibb.co/zscHStg/hero-2-new.jpg",
+      "imageHint": "Modern Architecture"
+    },
+    {
+      "id": "hero-3",
+      "description": "Detailed architectural blueprints and drafting tools on a desk, highlighting the precision of the planning phase.",
+      "imageUrl": "https://i.ibb.co/Vvz8x57/hero-3-new.jpg",
+      "imageHint": "Architectural Blueprints"
+    },
+    {
+      "id": "hero-4",
+      "description": "A bustling high-rise construction site with cranes at sunset, showcasing the scale of modern development.",
+      "imageUrl": "https://i.ibb.co/yBNp62v/hero-4-new.jpg",
+      "imageHint": "Construction Site"
+    },
+    {
+      "id": "hero-5",
+      "description": "A sustainable building with a vertical garden, illustrating the fusion of green technology and urban architecture.",
+      "imageUrl": "https://i.ibb.co/Y0Y9fL5/hero-5-new.jpg",
+      "imageHint": "Green Architecture"
+    },
+    {
+      "id": "post-1",
+      "description": "An architectural blueprint on a wooden desk",
+      "imageUrl": "https://images.unsplash.com/photo-1717250266254-ae1611936b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob3VzZSUyMGJsdWVwcmludHxlbnwwfHx8fDE3NTk1Mjc0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "house blueprint"
+    },
+    {
+      "id": "post-2",
+      "description": "A sustainable building with a green roof",
+      "imageUrl": "https://images.unsplash.com/photo-1569227997603-33b9f12af927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXN0YWluYWJsZSUyMGJ1aWxkaW5nfGVufDB8fHx8fDE3NTk1MDYzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sustainable building"
+    },
+    {
+      "id": "post-3",
+      "description": "A minimalist interior with simple furniture",
+      "imageUrl": "https://images.unsplash.com/photo-1612196808827-9ff25cb6137a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzU5NTMxNjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist interior"
+    },
+    {
+      "id": "post-4",
+      "description": "An aerial view of thoughtful urban design",
+      "imageUrl": "https://images.unsplash.com/photo-1644988666953-cf33cb5b3e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1cmJhbiUyMGRlc2lnbnxlbnwwfHx8fDE3NTk1Mjc0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "urban design"
+    },
+    {
+      "id": "post-5",
+      "description": "A detailed 3D model of a house",
+      "imageUrl": "https://images.unsplash.com/photo-1683628005537-17796b903ea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcmNoaXRlY3R1cmFsJTIwbW9kZWx8ZW58MHx8fHwxNzU5NDY0NTE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architectural model"
+    },
+    {
+      "id": "post-6",
+      "description": "A cozy living room with natural light",
+      "imageUrl": "https://images.unsplash.com/photo-1674230227190-05b589f2f730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3p5JTIwbGl2aW5ncm9vbXxlbnwwfHx8fDE3NTk0NjU5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy livingroom"
+    }
+  ]
+}

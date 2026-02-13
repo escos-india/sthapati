@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Test Job Seeker",
+        "email": "jobseeker@example.com",
+        "password": "password123",
+        "phone": "9876543210",
+        "headline": "Experienced Architect looking for opportunities",
+        "bio": "Passionate about sustainable design and urban planning. 5 years of experience in residential and commercial projects.",
+        "status": "active",
+        "preferences": {
+            "work_type": "Hybrid",
+            "expected_salary": "1200000",
+            "locations": [
+                "Mumbai",
+                "Pune"
+            ]
+        },
+        "skills": [
+            {
+                "name": "AutoCAD",
+                "proficiency": "Expert"
+            },
+            {
+                "name": "Revit",
+                "proficiency": "Intermediate"
+            }
+        ]
+    }
+]

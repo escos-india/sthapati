@@ -1,0 +1,5 @@
+
+> nextn@0.1.0 typecheck
+> tsc --noEmit
+
+src/components/profile/image-upload.tsx(127,27): error TS2552: Cannot find name 'onFileChange'. Did you mean 'onChange'?

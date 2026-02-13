@@ -1,0 +1,15 @@
+2026-01-21T18:43:03.346Z - Request: {"isHiring":true} | Update: {"isHiring":true} | Result: {"_id":"696cbbf8dce7351af2e21d05","isOpenToWork":false}
+2026-01-21T18:43:14.548Z - Request: {"isHiring":true} | Update: {"isHiring":true} | Result: {"_id":"696cbbf8dce7351af2e21d05","isOpenToWork":false}
+2026-01-21T18:46:38.348Z - Request: {"isOpenToWork":false} | Update: {"isOpenToWork":false} | Result: {"_id":"696cb29bdce7351af2e21c7e","isOpenToWork":false,"resume":"/uploads/1768851938594-995200217-dpr.pdf"}
+2026-01-21T18:52:36.304Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:40.184Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:41.035Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:41.554Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:49.458Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:49.854Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:50.182Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:52:57.674Z - ERROR: ReferenceError: Cannot access 'logPath' before initialization
+2026-01-21T18:56:12.217Z - API Hit: PATCH /api/user/status
+2026-01-21T18:56:12.415Z - Request: {"isHiring":true} | Update: {"isHiring":true} | Result: {"_id":"696cbbf8dce7351af2e21d05","isOpenToWork":false,"isHiring":true}
+2026-02-13T04:29:24.420Z - API Hit: PATCH /api/user/status
+2026-02-13T04:29:24.578Z - Request: {"isOpenToWork":true} | Update: {"isOpenToWork":true} | Result: {"_id":"6987290f3f131510c12b070c","isOpenToWork":true,"isHiring":false}
