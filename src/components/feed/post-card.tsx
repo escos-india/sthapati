@@ -255,7 +255,8 @@ export function PostCard({ post, user, isOwner = false, onDelete, onLikeUpdate }
                         {user ? (
                             <div className="flex gap-3">
                                 <Avatar className="h-8 w-8">
-                                    <AvatarImage src={user.image} />
+                                    <AvatarImage src={user.image || undefined} />
+
                                     <AvatarFallback>{user.name ? user.name.substring(0, 2).toUpperCase() : 'U'}</AvatarFallback>
                                 </Avatar>
                                 <div className="flex-1">

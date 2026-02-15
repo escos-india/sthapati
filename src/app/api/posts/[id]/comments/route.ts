@@ -70,7 +70,8 @@ export async function POST(req: Request, props: { params: Promise<{ id: string }
 
         const newComment = await CommentModel.create({
             post: postId,
-            author: user._id,
+            author: user._id as any,
+
             content,
             parentComment: parentCommentId || null
         });

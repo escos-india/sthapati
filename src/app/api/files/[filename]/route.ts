@@ -39,7 +39,8 @@ export async function GET(
         const contentType = mime.getType(filepath) || 'application/octet-stream';
 
         // 6. Return File
-        return new NextResponse(fileBuffer, {
+        return new NextResponse(fileBuffer as any, {
+
             headers: {
                 'Content-Type': contentType,
                 'Cache-Control': 'private, max-age=3600',

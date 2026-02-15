@@ -48,7 +48,8 @@ export async function POST(req: Request) {
         const user = await getUserByEmail(session.user.email);
         if (!user) return NextResponse.json({ message: "User not found" }, { status: 404 });
 
-        if (user._id.toString() === recipientId) {
+        if (user._id!.toString() === recipientId) {
+
             return NextResponse.json({ message: "Cannot connect with yourself" }, { status: 400 });
         }
 
@@ -101,7 +102,9 @@ export async function PUT(req: Request) {
         if (!request) return NextResponse.json({ message: "Request not found" }, { status: 404 });
 
         // Ensure I am the recipient
-        if (request.recipient.toString() !== user._id.toString()) {
+        if (!user) return NextResponse.json({ message: "User not found" }, { status: 404 });
+        if (request.recipient.toString() !== user._id!.toString()) {
+
             return NextResponse.json({ message: "Unauthorized" }, { status: 403 });
         }
 

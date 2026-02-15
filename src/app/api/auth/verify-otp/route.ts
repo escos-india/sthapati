@@ -41,7 +41,8 @@ export async function POST(req: Request) {
 
     // Also set verification badge
     if (!user.verification_badges) {
-      user.verification_badges = {};
+      user.verification_badges = { email: false, organization: false, skill: false };
+
     }
     user.verification_badges.email = true;
 

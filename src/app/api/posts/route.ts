@@ -103,7 +103,7 @@ export async function DELETE(req: Request) {
             return NextResponse.json({ message: "Post not found" }, { status: 404 });
         }
 
-        if (post.author.toString() !== user._id.toString()) {
+        if (post.author.toString() !== user._id!.toString()) {
             return NextResponse.json({ message: "Unauthorized" }, { status: 403 });
         }
 
@@ -149,14 +149,14 @@ export async function PUT(req: Request) {
                 post.likes = [];
             }
 
-            const hasLiked = post.likes.some((id: any) => id.toString() === user._id.toString());
+            const hasLiked = post.likes.some((id: any) => id.toString() === user._id!.toString());
 
             if (hasLiked) {
                 // Unlike
-                post.likes = post.likes.filter((id: any) => id.toString() !== user._id.toString());
+                post.likes = post.likes.filter((id: any) => id.toString() !== user._id!.toString());
             } else {
                 // Like
-                post.likes.push(user._id);
+                post.likes.push(user._id as any);
             }
             await post.save();
             return NextResponse.json({

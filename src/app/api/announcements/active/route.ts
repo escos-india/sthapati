@@ -40,7 +40,8 @@ export async function GET(req: Request) {
 
         const dismissedIds = user.dismissedAnnouncements?.map((id: any) => id.toString()) || [];
 
-        const filtered = activeAnnouncements.filter(a => !dismissedIds.includes(a._id.toString()));
+        const filtered = announcements.filter(a => !dismissedIds.includes(a._id.toString()));
+
 
         return NextResponse.json(filtered);
 

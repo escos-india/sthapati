@@ -19,7 +19,9 @@ export async function GET(req: Request) {
         // We need to populate the connection details
         // Since we only store IDs in user.connections, we need to fetch them.
         // Option 1: Populate on the User document itself (needs refetch)
+        if (!user) return NextResponse.json({ message: "User not found" }, { status: 404 });
         const userWithConnections = await UserModel.findById(user._id).populate({
+
             path: 'connections',
             select: 'name headline image category location'
         });

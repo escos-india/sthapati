@@ -119,7 +119,8 @@ export async function DELETE(req: Request) {
             return NextResponse.json({ message: "Job not found" }, { status: 404 });
         }
 
-        if (job.posted_by.toString() !== user._id.toString()) {
+        if (job.posted_by.toString() !== user._id!.toString()) {
+
             return NextResponse.json({ message: "Unauthorized to delete this job" }, { status: 403 });
         }
 

@@ -1,22 +1,13 @@
-'use client';
-
 import './globals.css';
-import { Toaster } from '@/components/ui/toaster';
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
-import { ThemeProvider } from '@/components/utils/theme-provider';
-import { usePathname } from 'next/navigation';
-import { SessionProvider } from 'next-auth/react';
-import { AnnouncementWidget } from '@/components/announcement-widget';
+import { Providers } from '@/components/providers';
+import { AppShell } from '@/components/app-shell';
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
-  const isAdminPage = pathname.startsWith('/admin') || pathname.startsWith('/sthapati');
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -30,23 +21,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        <SessionProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex flex-col min-h-screen">
-              {!isAdminPage && <Header />}
-              <main className="flex-grow">{children}</main>
-              {!isAdminPage && <Footer />}
-
-            </div>
-            <Toaster />
-            <AnnouncementWidget />
-          </ThemeProvider>
-        </SessionProvider>
+        <Providers>
+          <AppShell>
+            {children}
+          </AppShell>
+        </Providers>
       </body>
     </html >
   );

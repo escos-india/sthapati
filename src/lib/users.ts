@@ -83,11 +83,16 @@ export async function updateUserStatus(userId: string, status: UserStatus) {
   ).lean<IUser | null>();
 
   if (!user) {
-    user = await JobSeekerModel.findByIdAndUpdate(
+    const jobSeeker = await JobSeekerModel.findByIdAndUpdate(
       userId,
       { status },
       { new: true }
     ).lean();
+
+    if (jobSeeker) {
+      user = { ...jobSeeker, category: 'Job Seeker' } as unknown as IUser;
+
+    }
   }
   return user;
 }

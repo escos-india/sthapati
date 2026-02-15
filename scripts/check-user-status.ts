@@ -12,7 +12,11 @@ async function checkUserStatus() {
         await mongoose.connect(MONGODB_URI);
         console.log("Connected to DB");
 
-        const users = await mongoose.connection.db.collection('users').find({}).toArray();
+        const users = await mongoose.connection.db?.collection('users').find({}).toArray();
+        if (!users) {
+            console.log("No users found or DB connection failed.");
+            return;
+        }
         console.log(`Found ${users.length} users.`);
 
         users.forEach(user => {

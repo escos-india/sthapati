@@ -29,7 +29,7 @@ export async function GET(req: Request) {
                 email: 'test-sender@example.com',
                 password: 'password123', // Dummy
                 category: 'Architect',
-                role: 'user'
+
             });
         }
 

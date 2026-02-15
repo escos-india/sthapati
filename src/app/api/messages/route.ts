@@ -92,7 +92,9 @@ export async function POST(req: Request) {
         // User requested: "when i click on the connections i should be able to chat"
         // Implies chat is a privilege of connections. Let's enforce it for safety.
 
+        if (!user) return NextResponse.json({ message: "User not found" }, { status: 404 });
         if (!user.connections || !user.connections.map((id: any) => id.toString()).includes(recipientId)) {
+
             return NextResponse.json({ message: "You must be connected to message this user" }, { status: 403 });
         }
 
